@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicate Tabs Pro — Settings & Documentation</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="dashboard-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="12" height="12" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span class="brand-name">Duplicate Tabs Pro</span>
+        <span class="brand-badge">Client Dashboard</span>
+      </div>
+      
+      <!-- Theme Switcher -->
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+        <span id="theme-text">Toggle Dark Mode</span>
+      </button>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+      
+      <!-- Grid Layout -->
+      <div class="grid-layout">
+        
+        <!-- Left Column: Settings and Setup -->
+        <div class="column">
+          <!-- Shortcuts Card -->
+          <section class="card">
+            <div class="card-header">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                <line x1="6" y1="8" x2="6" y2="8"></line>
+                <line x1="10" y1="8" x2="10" y2="8"></line>
+                <line x1="14" y1="8" x2="14" y2="8"></line>
+                <line x1="18" y1="8" x2="18" y2="8"></line>
+                <line x1="6" y1="12" x2="6" y2="12"></line>
+                <line x1="10" y1="12" x2="14" y2="12"></line>
+                <line x1="18" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="16" x2="10" y2="16"></line>
+                <line x1="14" y1="16" x2="18" y2="16"></line>
+              </svg>
+              <h2>Configure Keyboard Keys</h2>
+            </div>
+            
+            <div class="card-body">
+              <p>Assign your own custom keys to duplicate tabs instantly without clicking any menus. The shortcut works globally across your entire browser.</p>
+              
+              <div class="shortcut-status">
+                <span class="status-label">Currently Assigned Key:</span>
+                <kbd id="shortcut-display">Loading...</kbd>
+              </div>
+              
+              <button id="customize-btn" class="primary-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Customize Shortcuts Page</span>
+              </button>
+              
+              <div class="warning-box">
+                <svg class="warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <div class="warning-content">
+                  <strong>Reload / Restart Required:</strong> After assigning a new hotkey, you must refresh your open web tabs or restart your browser for the new shortcut to activate.
+                </div>
+              </div>
+              
+              <div class="tip-box">
+                <strong>Pro-Tip:</strong> Chrome does not allow extensions to re-bind keys dynamically inside web pages for security. Clicking the button above opens Chrome's secure system configuration where you can change the shortcut directly.
+              </div>
+            </div>
+          </section>
+          
+          <!-- Credits Card -->
+          <section class="card credits-card">
+            <div class="card-body">
+              <p class="credits-text">
+                <strong>Duplicate Tabs Pro</strong> is built using secure, clean, and uncompressed code compliant with the highest Chrome Web Store standards.
+              </p>
+              <div class="divider"></div>
+              <div class="credits-brand">
+                <span>Built with <span class="heart-pulse">❤️</span> in Sri Lanka by</span>
+                <a href="https://infiax.com" target="_blank" rel="noopener noreferrer">Infiax Labs</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <!-- Right Column: Documentation -->
+        <div class="column">
+          <!-- Docs Card -->
+          <section class="card">
+            <div class="card-header">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <h2>Client Documentation & Help</h2>
+            </div>
+            
+            <div class="card-body">
+              <h3>How to Duplicate Your Tab</h3>
+              <ol class="docs-steps">
+                <li>
+                  <strong>Method 1: Click the Action Icon</strong>
+                  <p>Click the <strong>Duplicate Tabs Pro</strong> icon in your browser extension bar. Inside the popup, click the large blue <strong>"Duplicate Current Tab"</strong> button.</p>
+                </li>
+                <li>
+                  <strong>Method 2: Use the Global Keyboard Command</strong>
+                  <p>Press the assigned keyboard shortcut (default is <kbd id="docs-shortcut-fallback">Ctrl+Shift+K</kbd>) on any active tab. The page will immediately clone in a new tab adjacent to the current one.</p>
+                </li>
+              </ol>
+
+              <h3>Troubleshooting Guide</h3>
+              <ul class="docs-faq">
+                <li>
+                  <strong>Why does the shortcut not work on some pages?</strong>
+                  <p>For security, Google Chrome disables all extensions on protected system pages (like <code>chrome://settings</code>, <code>chrome://extensions</code>, the <code>New Tab Page</code>, or the official <code>Chrome Web Store</code>). On these pages, duplication via shortcut will not trigger.</p>
+                </li>
+                <li>
+                  <strong>The shortcut isn't working on normal websites?</strong>
+                  <p>Verify that another extension isn't conflicting with your shortcut. Click the <strong>Customize Shortcuts Page</strong> button in the left panel to check if the shortcut is mapped correctly or if Chrome reports a conflict.</p>
+                </li>
+                <li>
+                  <strong>How do I change the Dark/Light theme?</strong>
+                  <p>Use the toggle in the top-right of this page, or click the theme selector inside the browser toolbar popup. The setting will sync instantly across both pages.</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
