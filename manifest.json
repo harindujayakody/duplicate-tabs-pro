@@ -5,7 +5,8 @@
   "description": "Oneclick Duplicate active tabs instantly with customizable global keyboard shortcuts or a beautiful, minimal pure-black popup.",
   "permissions": [
     "storage",
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "background": {
     "service_worker": "background.js"
